@@ -1,20 +1,22 @@
-header {
-  height: 25%;
-}
-header .dropdown {
-  position: relative;
-  height: 5em;
-  width: 5em;
-}
-header .dropdown .bar {
-  position: absolute;
-  width: 50px;
-  height: 3px;
-  color: black;
-}
-
 body {
   background-color: aquamarine;
+}
+body header {
+  height: 25%;
+  display: flex;
+  justify-content: flex-end;
+}
+body header .dropdown {
+  position: relative;
+  height: 40px;
+  width: 3em;
+}
+body header .dropdown .bar {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  border-radius: 2px;
 }
 
 /*# sourceMappingURL=style.css.map */
