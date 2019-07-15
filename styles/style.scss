@@ -1,0 +1,19 @@
+header{
+    height: 25%;
+    & .dropdown{
+        position: relative;
+        height: 5em;
+        width: 5em;
+        & .bar{
+            position: absolute;
+            width: 50px;
+            height: 3px;
+            color: black;
+        }
+    }
+
+}
+
+body{
+    background-color: aquamarine;
+}
