@@ -6,9 +6,10 @@ $subrayado: #D3643B;
 
 body {
     margin: 0;
+    color:$fontColor;
     
     
-    &>div {
+    & >div {
         height: 100vh;
         background-color: $backgroundColorPresentacion;
         color: $fontColorPresentacion;
@@ -50,11 +51,11 @@ body {
 
     .sobreMi{
         background-color: $backgroundColor;
-padding-top: 1em;
-
+        padding:1em;
+        
         & > h2{
             margin: 0;
-            color:$fontColor;
+            color: $fontColor;
         }
 
         & .subrayado{
@@ -62,5 +63,15 @@ padding-top: 1em;
             height: 2px;
             width: 8em;
         }
+        & .cuadroTexto{
+            margin-top: 1em;
+            padding: 1em;
+            box-shadow: 3px 3px 5px 6px #ccc;
+            text-align: justify;
+
+        & > p{
+            color:$fontColor;
+        }
+    }
     }
 }
