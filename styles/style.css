@@ -1,36 +1,35 @@
 body {
   margin: 0;
+  position: relative;
 }
 body > div {
   height: 100vh;
   background-color: #1C1B18;
   color: #F2F1F0;
 }
-body header {
-  background-color: #1C1B18;
-  color: #F2F1F0;
-  height: 25%;
-  position: relative;
-  padding: 1em;
-}
-body header .dropdown {
-  position: absolute;
+body .dropdown {
+  position: fixed;
+  top: 2em;
   right: 2em;
-  height: 40px;
+  height: 3em;
   width: 3em;
+  padding: 1em;
+  border-radius: 100%;
 }
-body header .dropdown:hover {
+body .dropdown:hover {
   cursor: pointer;
+  background-color: rgba(204, 204, 204, 0.5);
 }
-body header .dropdown .bar {
+body .dropdown .bar {
   position: absolute;
-  width: 100%;
+  width: 3em;
   height: 2px;
   background-color: #F2F1F0;
   border-radius: 2px;
 }
 body .presentacion {
   display: flex;
+  height: 100%;
   justify-content: center;
   align-items: center;
   font-size: 1.5em;
@@ -90,6 +89,7 @@ body .presentacion {
   font-family: "Titillium Web", sans-serif;
   color: #1C1B18;
   padding-bottom: 0.2em;
+  margin-bottom: 1em;
 }
 .tecnologias > h1::after {
   content: "";
@@ -102,26 +102,45 @@ body .presentacion {
 .tecnologias > h1::after {
   width: 7.5em;
 }
+.tecnologias.bloquesTecnologias {
+  display: flex;
+  width: 100%;
+}
 .tecnologias .frontend {
-  box-shadow: 1px 1px 3px 3px #ccc;
+  box-shadow: 0px 0px 0px 1px #ccc;
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin-bottom: 2em;
+  padding: 1em;
 }
 .tecnologias .frontend img {
-  width: 40px;
-  height: 40px;
+  width: 80px;
+  height: 80px;
+  margin: 0 0.2em;
 }
 .tecnologias .backend {
-  box-shadow: 1px 1px 3px 3px #ccc;
+  box-shadow: 0px 0px 0px 1px #ccc;
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin-bottom: 2em;
+  padding: 1em;
 }
 .tecnologias .backend img {
-  width: 40px;
-  height: 40px;
+  width: 80px;
+  height: 80px;
+  margin: 0 0.2em;
 }
 .tecnologias .otros {
-  box-shadow: 1px 1px 3px 3px #ccc;
+  box-shadow: 0px 0px 0px 1px #ccc;
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin-bottom: 2em;
+  padding: 1em;
 }
 .tecnologias .otros img {
-  width: 40px;
-  height: 40px;
+  width: 80px;
+  height: 80px;
+  margin: 0 0.2em;
 }
 
 /*# sourceMappingURL=style.css.map */
