@@ -4,33 +4,62 @@ $backgroundColor: #F2F1F0;
 $fontColor:#1C1B18;
 $subrayado: #D3643B;
 
+@mixin titulo {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-size: 3em;
+    font-family: 'Titillium Web', sans-serif;
+    color: $fontColor;
+    padding-bottom: 0.2em;
+    
+    
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: center;
+        background-color: $subrayado;
+        height: 3px;
+        
+    }
+}
+
+@mixin bloque {
+    padding: 4em 10vw ;
+    color:$fontColor;
+    background-color: $backgroundColor;
+    font-family: 'Merriweather', serif;
+}
+
 body {
     margin: 0;
-    color:$fontColor;
     
     
-    & >div {
+    &>div {
         height: 100vh;
         background-color: $backgroundColorPresentacion;
         color: $fontColorPresentacion;
-
-        & header {
+    }
+        
+        header {
             background-color: $backgroundColorPresentacion;
             color: $fontColorPresentacion;
             height: 25%;
             position: relative;
             padding: 1em;
-
+            
             & .dropdown {
                 position: absolute;
                 right: 2em;
                 height: 40px;
                 width: 3em;
-
+                
                 &:hover {
                     cursor: pointer;
                 }
-
+                
                 & .bar {
                     position: absolute;
                     width: 100%;
@@ -39,47 +68,51 @@ body {
                     border-radius: 2px;
                 }
             }
-
+            
         }
 
         .presentacion {
             display: flex;
             justify-content: center;
             align-items: center;
+            font-size: 1.5em;
         }
     }
-
+    
     .sobreMi{
-        background-color: $backgroundColor;
-        padding:1em;
+        @include bloque;
         
-        & > h2{
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            position: relative;
-            color: $fontColor;
-            padding-bottom: 0.2em;
-            
-            &::after{
-                content: "";
-                position: absolute;
-                bottom: 0;
-                left: center;
-                background-color: $subrayado;
-                height: 3px;
-                width: 5.5em;
-            }
+        & > h1{
+           @include titulo;
+           &::after{
+            width: 5.3em;
+           }
         }
             & .cuadroTexto{
-            margin-top: 1em;
-            padding: 1em;
-            box-shadow: 1px 1px 3px 3px #ccc;
-            text-align: justify;
-
-        & > p{
-            color:$fontColor;
+                margin: 5em 0em;
+                padding: 1em;
+                box-shadow: 1px 1px 3px 3px #ccc;
+                text-align: justify;
+                
+                & > p{
+                    color:$fontColor;
+                    font-size: 1.5em;
+                }
+            }
+        }
+    .tecnologias{
+        @include bloque;
+        border-top: solid black 1px;
+        & > h1{
+            @include titulo;
+            &::after{
+                width: 7.5em;
+            }
         }
     }
-    }
-}
+    
+    // @media(max-width : 600px) {
+    //         .presentacion{
+    //                 font-size: 0.5em;
+    //             }
+    //         }
