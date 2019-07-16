@@ -131,9 +131,6 @@ body .presentacion {
   visibility: hidden;
   font-family: "Titillium Web", sans-serif;
 }
-.tecnologias .frontend .imagenTecnologia:hover {
-  cursor: pointer;
-}
 .tecnologias .frontend .imagenTecnologia:hover span {
   visibility: visible;
   transition: 0.5s ease-in-out;
@@ -166,9 +163,6 @@ body .presentacion {
 .tecnologias .backend .imagenTecnologia span {
   visibility: hidden;
   font-family: "Titillium Web", sans-serif;
-}
-.tecnologias .backend .imagenTecnologia:hover {
-  cursor: pointer;
 }
 .tecnologias .backend .imagenTecnologia:hover span {
   visibility: visible;
@@ -203,9 +197,6 @@ body .presentacion {
   visibility: hidden;
   font-family: "Titillium Web", sans-serif;
 }
-.tecnologias .otros .imagenTecnologia:hover {
-  cursor: pointer;
-}
 .tecnologias .otros .imagenTecnologia:hover span {
   visibility: visible;
   transition: 0.5s ease-in-out;
@@ -220,6 +211,12 @@ body .presentacion {
   width: 80px;
   height: 80px;
   margin: 0 0.2em 0.2em 0;
+}
+
+@media (max-width: 600px) {
+  .presentacion {
+    font-size: 0.5em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
