@@ -3,7 +3,7 @@ body {
   position: relative;
 }
 body > div {
-  height: 100vh;
+  height: min(100vh);
   background-color: #1C1B18;
   color: #F2F1F0;
 }
@@ -133,14 +133,15 @@ body .presentacion {
 }
 .tecnologias .frontend .imagenTecnologia:hover span {
   visibility: visible;
+  transition: 0.5s ease-in-out;
 }
 .tecnologias .frontend .imagenTecnologia:hover img {
-  transition-duration: 0.5s;
-  width: 85px;
-  height: 85px;
+  width: 82px;
+  height: 82px;
   margin: 0 0.2em 0.2em 0;
 }
 .tecnologias .frontend .imagenTecnologia img {
+  transition: 0.5s ease-in-out;
   width: 80px;
   height: 80px;
   margin: 0 0.2em 0.2em 0;
@@ -166,14 +167,15 @@ body .presentacion {
 }
 .tecnologias .backend .imagenTecnologia:hover span {
   visibility: visible;
+  transition: 0.5s ease-in-out;
 }
 .tecnologias .backend .imagenTecnologia:hover img {
-  transition-duration: 0.5s;
-  width: 85px;
-  height: 85px;
+  width: 82px;
+  height: 82px;
   margin: 0 0.2em 0.2em 0;
 }
 .tecnologias .backend .imagenTecnologia img {
+  transition: 0.5s ease-in-out;
   width: 80px;
   height: 80px;
   margin: 0 0.2em 0.2em 0;
@@ -199,14 +201,15 @@ body .presentacion {
 }
 .tecnologias .otros .imagenTecnologia:hover span {
   visibility: visible;
+  transition: 0.5s ease-in-out;
 }
 .tecnologias .otros .imagenTecnologia:hover img {
-  transition-duration: 0.5s;
-  width: 85px;
-  height: 85px;
+  width: 82px;
+  height: 82px;
   margin: 0 0.2em 0.2em 0;
 }
 .tecnologias .otros .imagenTecnologia img {
+  transition: 0.5s ease-in-out;
   width: 80px;
   height: 80px;
   margin: 0 0.2em 0.2em 0;
