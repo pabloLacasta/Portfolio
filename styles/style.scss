@@ -1,43 +1,59 @@
 $backgroundColor: #1C1B18;
 $fontColor: #F2F1F0;
+$subrayado: #D3643B;
 
-body{
+body {
     margin: 0;
     background-color: $backgroundColor;
     color: $fontColor;
-    
-    & >div{
+
+    &>div {
         height: 100vh;
-  
-    & header{
-        height: 25%;
-        position: relative;
-        padding: 1em;
-    & .dropdown{
-        position: absolute;
-        right: 2em;
-        height: 40px;
-        width: 3em;
 
-        &:hover{
-            cursor: pointer;
+        & header {
+            height: 25%;
+            position: relative;
+            padding: 1em;
+
+            & .dropdown {
+                position: absolute;
+                right: 2em;
+                height: 40px;
+                width: 3em;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                & .bar {
+                    position: absolute;
+                    width: 100%;
+                    height: 2px;
+                    background-color: $fontColor;
+                    border-radius: 2px;
+                }
+            }
+
         }
 
-        & .bar{
-            position: absolute;
-            width: 100%;
-            height: 3px;
-            background-color: $fontColor;
-            border-radius: 2px;
+        .presentacion {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
+    }
+
+    .sobreMi{
+        border-top: solid $fontColor 1px;
+
+        & > h2{
+            margin-bottom: 0;
         }
-    
-    }
-    .presentacion{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+
+        & .subrayado{
+            background-color: $subrayado;
+            height: 2px;
+            width: 8em;
+        }
     }
 }
-
