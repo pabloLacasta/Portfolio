@@ -55,18 +55,26 @@ body {
         
         & > h2{
             margin: 0;
+            display: flex;
+            justify-content: center;
+            position: relative;
             color: $fontColor;
+            padding-bottom: 0.2em;
+            
+            &::after{
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: center;
+                background-color: $subrayado;
+                height: 3px;
+                width: 5.5em;
+            }
         }
-
-        & .subrayado{
-            background-color: $subrayado;
-            height: 2px;
-            width: 8em;
-        }
-        & .cuadroTexto{
+            & .cuadroTexto{
             margin-top: 1em;
             padding: 1em;
-            box-shadow: 3px 3px 5px 6px #ccc;
+            box-shadow: 1px 1px 3px 3px #ccc;
             text-align: justify;
 
         & > p{
