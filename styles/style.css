@@ -1,15 +1,19 @@
-body {
-  background-color: aquamarine;
+html {
+  margin: 0;
 }
+
 body header {
   height: 25%;
-  display: flex;
-  justify-content: flex-end;
+  position: relative;
 }
 body header .dropdown {
-  position: relative;
+  position: absolute;
+  right: 2em;
   height: 40px;
   width: 3em;
+}
+body header .dropdown:hover {
+  cursor: pointer;
 }
 body header .dropdown .bar {
   position: absolute;
@@ -17,6 +21,12 @@ body header .dropdown .bar {
   height: 3px;
   background-color: black;
   border-radius: 2px;
+}
+body .presentacion {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
