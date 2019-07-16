@@ -31,6 +31,9 @@ $subrayado: #D3643B;
     color: $fontColor;
     background-color: $backgroundColor;
     font-family: 'Merriweather', serif;
+    & h3{
+        font-family: 'Titillium Web', sans-serif;
+    }
 }
 
 @mixin bloqueTecnologías {

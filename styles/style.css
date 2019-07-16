@@ -41,6 +41,9 @@ body .presentacion {
   background-color: #F2F1F0;
   font-family: "Merriweather", serif;
 }
+.sobreMi h3 {
+  font-family: "Titillium Web", sans-serif;
+}
 .sobreMi > h1 {
   margin: 0;
   display: flex;
@@ -79,6 +82,9 @@ body .presentacion {
   background-color: #F2F1F0;
   font-family: "Merriweather", serif;
   border-top: solid black 1px;
+}
+.tecnologias h3 {
+  font-family: "Titillium Web", sans-serif;
 }
 .tecnologias > h1 {
   margin: 0;
