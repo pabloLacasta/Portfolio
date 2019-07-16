@@ -134,6 +134,12 @@ body .presentacion {
 .tecnologias .frontend .imagenTecnologia:hover span {
   visibility: visible;
 }
+.tecnologias .frontend .imagenTecnologia:hover img {
+  transition-duration: 0.5s;
+  width: 85px;
+  height: 85px;
+  margin: 0 0.2em 0.2em 0;
+}
 .tecnologias .frontend .imagenTecnologia img {
   width: 80px;
   height: 80px;
@@ -161,6 +167,12 @@ body .presentacion {
 .tecnologias .backend .imagenTecnologia:hover span {
   visibility: visible;
 }
+.tecnologias .backend .imagenTecnologia:hover img {
+  transition-duration: 0.5s;
+  width: 85px;
+  height: 85px;
+  margin: 0 0.2em 0.2em 0;
+}
 .tecnologias .backend .imagenTecnologia img {
   width: 80px;
   height: 80px;
@@ -187,6 +199,12 @@ body .presentacion {
 }
 .tecnologias .otros .imagenTecnologia:hover span {
   visibility: visible;
+}
+.tecnologias .otros .imagenTecnologia:hover img {
+  transition-duration: 0.5s;
+  width: 85px;
+  height: 85px;
+  margin: 0 0.2em 0.2em 0;
 }
 .tecnologias .otros .imagenTecnologia img {
   width: 80px;
