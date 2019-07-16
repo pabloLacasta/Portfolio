@@ -1,37 +1,43 @@
-html{
-    margin: 0;
-}
+$backgroundColor: #1C1B18;
+$fontColor: #F2F1F0;
 
 body{
+    margin: 0;
+    background-color: $backgroundColor;
+    color: $fontColor;
+    
+    & >div{
+        height: 100vh;
   
     & header{
-    height: 25%;
-    position: relative;
+        height: 25%;
+        position: relative;
+        padding: 1em;
     & .dropdown{
+        position: absolute;
+        right: 2em;
+        height: 40px;
+        width: 3em;
+
+        &:hover{
+            cursor: pointer;
+        }
+
+        & .bar{
             position: absolute;
-            right: 2em;
-            height: 40px;
-            width: 3em;
-
-            &:hover{
-                cursor: pointer;
-            }
-
-            & .bar{
-                position: absolute;
-                width: 100%;
-                height: 3px;
-                background-color: black;
-                border-radius: 2px;
-            }
+            width: 100%;
+            height: 3px;
+            background-color: $fontColor;
+            border-radius: 2px;
+        }
         }
     
     }
     .presentacion{
-        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
+    }
     }
 }
 
