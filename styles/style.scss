@@ -33,6 +33,8 @@ $subrayado: #D3643B;
     font-family: 'Merriweather', serif;
 }
 
+
+
 body {
     margin: 0;
     
@@ -107,6 +109,27 @@ body {
             @include titulo;
             &::after{
                 width: 7.5em;
+            }
+        }
+        & .frontend{
+            box-shadow: 1px 1px 3px 3px #ccc;
+            & img{
+                width: 40px;
+                height: 40px;
+            }
+        }
+        & .backend{
+            box-shadow: 1px 1px 3px 3px #ccc;
+            & img{
+                width: 40px;
+                height: 40px;
+            }
+        }
+        & .otros{
+            box-shadow: 1px 1px 3px 3px #ccc;
+            & img{
+                width: 40px;
+                height: 40px;
             }
         }
     }

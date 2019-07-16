@@ -102,5 +102,26 @@ body .presentacion {
 .tecnologias > h1::after {
   width: 7.5em;
 }
+.tecnologias .frontend {
+  box-shadow: 1px 1px 3px 3px #ccc;
+}
+.tecnologias .frontend img {
+  width: 40px;
+  height: 40px;
+}
+.tecnologias .backend {
+  box-shadow: 1px 1px 3px 3px #ccc;
+}
+.tecnologias .backend img {
+  width: 40px;
+  height: 40px;
+}
+.tecnologias .otros {
+  box-shadow: 1px 1px 3px 3px #ccc;
+}
+.tecnologias .otros img {
+  width: 40px;
+  height: 40px;
+}
 
 /*# sourceMappingURL=style.css.map */
