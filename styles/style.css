@@ -117,36 +117,81 @@ body .presentacion {
   display: inline-flex;
   flex-wrap: wrap;
   margin-bottom: 2em;
-  padding: 1em;
+  padding: 1em 1em 0 1em;
 }
-.tecnologias .frontend img {
+.tecnologias .frontend .imagenTecnologia {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.tecnologias .frontend .imagenTecnologia span {
+  visibility: hidden;
+  font-family: "Titillium Web", sans-serif;
+}
+.tecnologias .frontend .imagenTecnologia:hover {
+  cursor: pointer;
+}
+.tecnologias .frontend .imagenTecnologia:hover span {
+  visibility: visible;
+}
+.tecnologias .frontend .imagenTecnologia img {
   width: 80px;
   height: 80px;
-  margin: 0 0.2em;
+  margin: 0 0.2em 0.2em 0;
 }
 .tecnologias .backend {
   box-shadow: 0px 0px 0px 1px #ccc;
   display: inline-flex;
   flex-wrap: wrap;
   margin-bottom: 2em;
-  padding: 1em;
+  padding: 1em 1em 0 1em;
 }
-.tecnologias .backend img {
+.tecnologias .backend .imagenTecnologia {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.tecnologias .backend .imagenTecnologia span {
+  visibility: hidden;
+  font-family: "Titillium Web", sans-serif;
+}
+.tecnologias .backend .imagenTecnologia:hover {
+  cursor: pointer;
+}
+.tecnologias .backend .imagenTecnologia:hover span {
+  visibility: visible;
+}
+.tecnologias .backend .imagenTecnologia img {
   width: 80px;
   height: 80px;
-  margin: 0 0.2em;
+  margin: 0 0.2em 0.2em 0;
 }
 .tecnologias .otros {
   box-shadow: 0px 0px 0px 1px #ccc;
   display: inline-flex;
   flex-wrap: wrap;
   margin-bottom: 2em;
-  padding: 1em;
+  padding: 1em 1em 0 1em;
 }
-.tecnologias .otros img {
+.tecnologias .otros .imagenTecnologia {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.tecnologias .otros .imagenTecnologia span {
+  visibility: hidden;
+  font-family: "Titillium Web", sans-serif;
+}
+.tecnologias .otros .imagenTecnologia:hover {
+  cursor: pointer;
+}
+.tecnologias .otros .imagenTecnologia:hover span {
+  visibility: visible;
+}
+.tecnologias .otros .imagenTecnologia img {
   width: 80px;
   height: 80px;
-  margin: 0 0.2em;
+  margin: 0 0.2em 0.2em 0;
 }
 
 /*# sourceMappingURL=style.css.map */

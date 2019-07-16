@@ -31,7 +31,8 @@ $subrayado: #D3643B;
     color: $fontColor;
     background-color: $backgroundColor;
     font-family: 'Merriweather', serif;
-    & h3{
+
+    & h3 {
         font-family: 'Titillium Web', sans-serif;
     }
 }
@@ -41,13 +42,32 @@ $subrayado: #D3643B;
     display: inline-flex;
     flex-wrap: wrap;
     margin-bottom: 2em;
-    padding: 1em;
+    padding:1em 1em 0 1em;
 
+    & .imagenTecnologia {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        & span {
+            visibility: hidden;
+            font-family: 'Titillium Web', sans-serif;
 
-    & img {
-        width: 80px;
-        height: 80px;
-        margin: 0 0.2em;
+        }
+
+        &:hover {
+            cursor: pointer;
+
+            & span {
+                visibility: visible;
+            }
+
+        }
+        
+        & img {
+            width: 80px;
+            height: 80px;
+            margin: 0 0.2em 0.2em 0;
+        }
     }
 }
 
@@ -74,7 +94,6 @@ body {
         &:hover {
             cursor: pointer;
             background-color: rgba(204, 204, 204, 0.5)
-
         }
 
         & .bar {
