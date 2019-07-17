@@ -185,6 +185,20 @@ body {
     }
 }
 
+.misProyectos{
+    @include bloque;
+    border-top: solid black 1px;
+
+    &>h1 {
+        @include tituloBloque;
+        margin-bottom: 1em;
+
+        &::after {
+            width: 7.5em;
+        }
+    }
+}
+
 @media(max-width : 600px) {
         .presentacion{
                 font-size: 0.5em;
