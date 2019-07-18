@@ -69,7 +69,7 @@ $subrayado: #D3643B;
                 transition: 0.5s ease-in-out;
 
             }
-            & img {
+            & img{
                 width: 82px;
                 height: 82px;
                 margin: 0 0.2em 0.2em 0;
@@ -81,7 +81,7 @@ $subrayado: #D3643B;
             transition: 0.2s ease-in-out;
             width: 80px;
             height: 80px;
-            margin: 0 0.2em 0.2em 0;
+            margin: 0 0.5em 0.5em 0;
         }
     }
 }
@@ -198,8 +198,38 @@ body {
     }
 }
 
+footer{
+    background-color: $backgroundColorPresentacion;
+    color: $fontColorPresentacion;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 3em 3em 3em;
+
+    & h2{
+        text-align: center;
+        font-family: 'Titillium Web', sans-serif;
+
+    }
+    & .contacto{
+        display: flex;
+        justify-content: space-around;
+
+
+        & img:not(.email){
+            width: 80px;
+            height: 80px;
+        }
+        & .email{
+            width: 73px;
+            height: 73px;
+        }
+    }
+
+}
+
 @media(max-width : 600px) {
         .presentacion{
-                font-size: 0.5em;
+                font-size: 90%;
             }
         }
