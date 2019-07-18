@@ -5,6 +5,7 @@
 body {
   margin: 0;
   position: relative;
+  width: 100vw;
 }
 body > div {
   background-color: #1C1B18;
@@ -274,10 +275,6 @@ footer .contacto .email {
 }
 
 @media (max-width: 600px) {
-  .dropdown {
-    margin-left: 1em;
-  }
-
   .textoPresentacion {
     font-size: 0.75em;
   }
