@@ -229,7 +229,16 @@ footer{
 }
 
 @media(max-width : 600px) {
-        .presentacion{
-                font-size: 90%;
+        .dropdown{
+            margin-left: 1em;
+        }
+        .textoPresentacion{
+                font-size: 0.75em;
             }
         }
+
+        @media(max-width : 450px) {
+            .textoPresentacion{
+                    font-size: 0.6em;
+                }
+            }
