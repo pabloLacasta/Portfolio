@@ -43,7 +43,7 @@ body .presentacion {
   padding: 2em 10vw;
   color: #1C1B18;
   background-color: #F2F1F0;
-  font-family: "Merriweather", serif;
+  font-family: "Titillium Web", sans-serif;
 }
 .sobreMi h3 {
   font-family: "Titillium Web", sans-serif;
@@ -54,7 +54,6 @@ body .presentacion {
   justify-content: center;
   position: relative;
   font-size: 3em;
-  font-family: "Titillium Web", sans-serif;
   color: #1C1B18;
   padding-bottom: 0.2em;
 }
@@ -85,7 +84,7 @@ body .presentacion {
   padding: 2em 10vw;
   color: #1C1B18;
   background-color: #F2F1F0;
-  font-family: "Merriweather", serif;
+  font-family: "Titillium Web", sans-serif;
   border-top: solid black 1px;
 }
 .tecnologias h3 {
@@ -97,7 +96,6 @@ body .presentacion {
   justify-content: center;
   position: relative;
   font-size: 3em;
-  font-family: "Titillium Web", sans-serif;
   color: #1C1B18;
   padding-bottom: 0.2em;
   margin-bottom: 1em;
@@ -222,7 +220,7 @@ body .presentacion {
   padding: 2em 10vw;
   color: #1C1B18;
   background-color: #F2F1F0;
-  font-family: "Merriweather", serif;
+  font-family: "Titillium Web", sans-serif;
   border-top: solid black 1px;
 }
 .misProyectos h3 {
@@ -234,7 +232,6 @@ body .presentacion {
   justify-content: center;
   position: relative;
   font-size: 3em;
-  font-family: "Titillium Web", sans-serif;
   color: #1C1B18;
   padding-bottom: 0.2em;
   margin-bottom: 1em;

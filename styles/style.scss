@@ -15,7 +15,7 @@ $subrayado: #D3643B;
     justify-content: center;
     position: relative;
     font-size: 3em;
-    font-family: 'Titillium Web', sans-serif;
+    // font-family: 'Titillium Web', sans-serif;
     color: $fontColor;
     padding-bottom: 0.2em;
 
@@ -36,8 +36,7 @@ $subrayado: #D3643B;
     padding: 2em 10vw;
     color: $fontColor;
     background-color: $backgroundColor;
-    font-family: 'Merriweather', serif;
-
+    font-family: 'Titillium Web', sans-serif;
     & h3 {
         font-family: 'Titillium Web', sans-serif;
     }
