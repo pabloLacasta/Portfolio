@@ -4,39 +4,72 @@
 
 body {
   margin: 0;
+  position: relative;
 }
 body > div {
   background-color: #1C1B18;
   color: #F2F1F0;
 }
 body header {
+  position: relative;
   width: 100%;
+  height: 70px;
   position: fixed;
   background-color: rgba(134, 184, 177, 0.2);
 }
-body header > div {
+body header .dropdownContainer {
   height: 4.5em;
   width: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-body header > div .dropdown {
+body header .dropdownContainer .dropdown {
   right: 1em;
   height: 3em;
   width: 3em;
   padding: 0.7em;
 }
-body header > div .dropdown .bar {
-  position: absolute;
+body header .dropdownContainer .dropdown .bar {
   width: 3em;
   height: 2px;
   background-color: #F2F1F0;
   border-radius: 2px;
 }
-body header > div .dropdown:hover {
+body header .dropdownContainer .dropdown:hover {
   cursor: pointer;
   background-color: rgba(204, 204, 204, 0.5);
+}
+body .dropdownMenu {
+  list-style: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1em 0;
+  width: 15em;
+  background-color: rgba(177, 173, 160, 0.87);
+}
+body .dropdownMenu li {
+  padding-left: 1em;
+  padding-bottom: 1em;
+  width: 100%;
+}
+body .dropdownMenuli :not(.cerrar) {
+  border-bottom: #1C1B18 solid 1px;
+}
+body .dropdownMenu a {
+  text-decoration: none;
+  font: "Titillium Web", sans-serif;
+  font-size: 1.2em;
+  color: #1C1B18;
+}
+body .dropdownMenu .cerrar {
+  height: 15px;
+  width: 20px;
+  align-self: center;
 }
 body .presentacion {
   display: flex;
