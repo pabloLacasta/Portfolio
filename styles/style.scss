@@ -106,13 +106,14 @@ body {
             width:100%;
             display: flex;
             justify-content: flex-end;
+            align-items: center;
 
         & .dropdown {
             
             right: 1em;
             height: 3em;
             width: 3em;
-            padding: 0.5em;
+            padding: 0.7em;
             
     
             &:hover {
