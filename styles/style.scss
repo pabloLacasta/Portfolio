@@ -88,8 +88,7 @@ $subrayado: #D3643B;
 
 body {
     margin: 0;
-    position: relative;
-    width: 100vw;
+    // width: 100vw;
 
 
     &>div {
@@ -97,28 +96,41 @@ body {
         color: $fontColorPresentacion;
     }
 
-    & .dropdown {
+    & header{
+        width: 100%;
         position: fixed;
-        top: 2em;
-        right: 2em;
-        height: 3em;
-        width: 3em;
-        padding: 1em;
-        border-radius: 100%;
+        background-color: rgba(134,184,177,0.2);
 
-        &:hover {
-            cursor: pointer;
-            background-color: rgba(204, 204, 204, 0.5)
-        }
+        & > div {
+            height: 4.5em;
+            width:100%;
+            display: flex;
+            justify-content: flex-end;
 
-        & .bar {
-            position: absolute;
+        & .dropdown {
+            
+            right: 1em;
+            height: 3em;
             width: 3em;
-            height: 2px;
-            background-color: $fontColorPresentacion;
-            border-radius: 2px;
+            padding: 0.5em;
+            
+    
+            &:hover {
+                cursor: pointer;
+                background-color: rgba(204, 204, 204, 0.5)
+            }
+    
+            & .bar {
+                position: absolute;
+                width: 3em;
+                height: 2px;
+                background-color: $fontColorPresentacion;
+                border-radius: 2px;
+            }
         }
     }
+    }
+
 
     .presentacion {
         display: flex;

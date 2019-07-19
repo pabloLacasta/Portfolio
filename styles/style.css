@@ -4,27 +4,33 @@
 
 body {
   margin: 0;
-  position: relative;
-  width: 100vw;
 }
 body > div {
   background-color: #1C1B18;
   color: #F2F1F0;
 }
-body .dropdown {
+body header {
+  width: 100%;
   position: fixed;
-  top: 2em;
-  right: 2em;
+  background-color: rgba(134, 184, 177, 0.2);
+}
+body header > div {
+  height: 4.5em;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+body header > div .dropdown {
+  right: 1em;
   height: 3em;
   width: 3em;
-  padding: 1em;
-  border-radius: 100%;
+  padding: 0.5em;
 }
-body .dropdown:hover {
+body header > div .dropdown:hover {
   cursor: pointer;
   background-color: rgba(204, 204, 204, 0.5);
 }
-body .dropdown .bar {
+body header > div .dropdown .bar {
   position: absolute;
   width: 3em;
   height: 2px;
