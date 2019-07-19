@@ -88,7 +88,6 @@ $subrayado: #D3643B;
 
 body {
     margin: 0;
-    // width: 100vw;
 
 
     &>div {
@@ -115,12 +114,6 @@ body {
             width: 3em;
             padding: 0.7em;
             
-    
-            &:hover {
-                cursor: pointer;
-                background-color: rgba(204, 204, 204, 0.5)
-            }
-    
             & .bar {
                 position: absolute;
                 width: 3em;
@@ -128,7 +121,14 @@ body {
                 background-color: $fontColorPresentacion;
                 border-radius: 2px;
             }
+           
+            
+            &:hover {
+                cursor: pointer;
+                background-color: rgba(204, 204, 204, 0.5)
+            }
         }
+    
     }
     }
 
