@@ -138,7 +138,7 @@ body {
     }
 
     .dropdownMenu {
-        display: none ;
+        visibility: hidden;
         z-index: 1;
         list-style: none;
         position: absolute;
@@ -310,11 +310,11 @@ footer {
 
 @media(max-width : 880px) {
 
-    .dropdownMenu{
+    .dropdownMenu {
         background-color: rgb(177, 173, 160, 1);
-        }
     }
-    
+}
+
 @media(max-width : 600px) {
 
     .textoPresentacion {
