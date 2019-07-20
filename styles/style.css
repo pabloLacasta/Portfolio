@@ -48,25 +48,37 @@ body .dropdownMenu {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 1em 0;
   width: 15em;
   background-color: rgba(177, 173, 160, 0.87);
 }
 body .dropdownMenu li {
-  padding-left: 1em;
   padding-bottom: 1em;
+  padding-top: 0.5em;
   width: 100%;
 }
-body .dropdownMenuli :not(.cerrar) {
+body .dropdownMenu li :hover {
+  background-color: rgba(144, 141, 131, 0.87);
+}
+body .dropdownMenu li:not(.cerrarContainer) {
+  padding-left: 1em;
+}
+body .dropdownMenu li {
   border-bottom: #1C1B18 solid 1px;
 }
+body .dropdownMenu .cerrarContainer :hover {
+  cursor: pointer;
+}
 body .dropdownMenu a {
-  text-decoration: none;
   font: "Titillium Web", sans-serif;
+  text-decoration: none;
   font-size: 1.2em;
   color: #1C1B18;
 }
-body .dropdownMenu .cerrar {
+body .dropdownMenu .cerrarContainer {
+  display: flex;
+  justify-content: center;
+}
+body .dropdownMenu .cerrarContainer .cerrar {
   height: 15px;
   width: 20px;
   align-self: center;
