@@ -61,6 +61,7 @@ sans-serif;
         & span {
             visibility: hidden;
             font-family: $font;
+            font-weight: 600;
 
         }
 
@@ -139,7 +140,7 @@ body {
 
     .dropdownMenu {
         visibility: hidden;
-        z-index: 1;
+        z-index: 7;
         list-style: none;
         position: absolute;
         right: 0;
@@ -210,6 +211,8 @@ body {
 
     &>h1 {
         @include tituloBloque;
+        z-index: 1;
+
 
         &::after {
             width: 5.3em;

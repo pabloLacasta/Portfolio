@@ -8,4 +8,6 @@ document.querySelector('.dropdown').addEventListener('click', event => {
 
     })
     
-    
+    document.querySelector('.enlaceContainer').addEventListener('click', event => {
+        event.target.childNodes.click();
+    })
