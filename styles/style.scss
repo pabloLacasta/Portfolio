@@ -138,6 +138,8 @@ body {
     }
 
     .dropdownMenu {
+        display: none ;
+        z-index: 1;
         list-style: none;
         position: absolute;
         right: 0;
@@ -153,20 +155,27 @@ body {
             padding-top: 0.5em;
             width: 100%;
 
-            & :hover {
+            &:hover {
                 background-color: rgba(144, 141, 131, 0.87);
+                cursor: pointer;
             }
         }
 
         & li:not(.cerrarContainer) {
             padding-left: 1em;
         }
-           & li{ border-bottom: $fontColor solid 1px;
-           }
-        & .cerrarContainer :hover{
+
+        & li {
+            border-bottom: $fontColor solid 1px;
+        }
+
+        & .cerrarContainer :hover {
             cursor: pointer;
         }
+
         & a {
+            width: 5em;
+            height: 100%;
             font: $font;
             text-decoration: none;
             font-size: 1.2em;
@@ -298,6 +307,14 @@ footer {
 
 }
 
+
+@media(max-width : 880px) {
+
+    .dropdownMenu{
+        background-color: rgb(177, 173, 160, 1);
+        }
+    }
+    
 @media(max-width : 600px) {
 
     .textoPresentacion {

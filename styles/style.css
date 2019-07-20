@@ -41,6 +41,8 @@ body header .dropdownContainer .dropdown:hover {
   background-color: rgba(204, 204, 204, 0.5);
 }
 body .dropdownMenu {
+  display: none;
+  z-index: 1;
   list-style: none;
   position: absolute;
   right: 0;
@@ -56,8 +58,9 @@ body .dropdownMenu li {
   padding-top: 0.5em;
   width: 100%;
 }
-body .dropdownMenu li :hover {
+body .dropdownMenu li:hover {
   background-color: rgba(144, 141, 131, 0.87);
+  cursor: pointer;
 }
 body .dropdownMenu li:not(.cerrarContainer) {
   padding-left: 1em;
@@ -69,6 +72,8 @@ body .dropdownMenu .cerrarContainer :hover {
   cursor: pointer;
 }
 body .dropdownMenu a {
+  width: 5em;
+  height: 100%;
   font: "Titillium Web", sans-serif;
   text-decoration: none;
   font-size: 1.2em;
@@ -326,6 +331,11 @@ footer .contacto .email {
   height: 73px;
 }
 
+@media (max-width: 880px) {
+  .dropdownMenu {
+    background-color: #b1ada0;
+  }
+}
 @media (max-width: 600px) {
   .textoPresentacion {
     font-size: 0.75em;
