@@ -175,6 +175,7 @@ body {
             &:hover {
                 background-color: rgba(144, 141, 131, 0.87);
                 cursor: pointer;
+                transition: 0.5s;
 
             }
         }
@@ -428,7 +429,7 @@ footer {
 }
 
 
-@media(max-width : 600px) {
+@media(max-width : 800px) and (min-width: 600px) {
 
     .dropdownMenu {
         background-color: rgb(247, 247, 238) !important;
