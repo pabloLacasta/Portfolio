@@ -36,6 +36,9 @@ body header .dropdownContainer .dropdown .bar {
   background-color: #F2F1F0;
   border-radius: 2px;
 }
+body header .dropdownContainer .dropdown .black {
+  background-color: #1C1B18;
+}
 body header .dropdownContainer .dropdown:hover {
   cursor: pointer;
   background-color: rgba(204, 204, 204, 0.5);
