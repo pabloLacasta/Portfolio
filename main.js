@@ -1,6 +1,7 @@
 document.querySelector('.dropdown').addEventListener('click', event => {
     event.target.style.visibility= 'hidden';
     document.querySelector('.dropdownMenu').style.visibility= 'visible';
+    webkitAnimationStart;
     })
     document.querySelector('.dropdownMenu').addEventListener('click', event =>{
         document.querySelector('.dropdownMenu').style.visibility = 'hidden';
@@ -29,4 +30,4 @@ document.querySelector('.dropdown').addEventListener('click', event => {
     
     });
 
-    
+ 
