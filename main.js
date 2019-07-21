@@ -1,7 +1,10 @@
 document.querySelector('.dropdown').addEventListener('click', event => {
-    event.target.style.visibility= 'hidden';
-    document.querySelector('.dropdownMenu').style.visibility= 'visible';
-    webkitAnimationStart;
+    // event.target.style.visibility= 'hidden';
+    if(document.querySelector('.dropdownMenu').style.visibility=== 'hidden'){
+      document.querySelector('.dropdownMenu').style.visibility= 'visible';
+    }
+    else document.querySelector('.dropdownMenu').style.visibility= 'hidden';
+
     })
     document.querySelector('.dropdownMenu').addEventListener('click', event =>{
         document.querySelector('.dropdownMenu').style.visibility = 'hidden';

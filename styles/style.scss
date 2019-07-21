@@ -1,8 +1,8 @@
-$backgroundColorPresentacion: #1C1B18;
+$backgroundColorPresentacion: rgb(28, 27, 24);
 $fontColorPresentacion: #F2F1F0;
 $backgroundColor: #F2F1F0;
 $fontColor:#1C1B18;
-$subrayado: #D3643B;
+$subrayado: rgb(211, 100, 59);
 $font : 'Titillium Web',
 sans-serif;
 
@@ -115,11 +115,13 @@ body {
             justify-content: flex-end;
             align-items: center;
 
+
+
             & .dropdown {
                 right: 1em;
                 height: 3em;
                 width: 3em;
-                padding: 0.7em;
+                padding: 0.5em;
 
                 & .bar {
                     width: 3em;
@@ -127,14 +129,22 @@ body {
                     background-color: $fontColorPresentacion;
                     border-radius: 2px;
                 }
-                .black{
+
+                .black {
                     background-color: $fontColor;
                 }
 
 
                 &:hover {
                     cursor: pointer;
-                    background-color: rgba(204, 204, 204, 0.5)
+                    background-color: rgba(204, 204, 204, 0.5);
+                    border-radius: 3px;
+                    transition: 0.4s;
+                    -webkit-transition: height 0.3s ease-in;
+                    -moz-transition: height 0.3s ease-in;
+                    -o-transition: height 0.3s ease-in;
+                    -ms-transition: height 0.3s ease-in;
+                    transition: height 0.3s ease-in;
                 }
             }
 
@@ -145,16 +155,17 @@ body {
         visibility: hidden;
         position: absolute;
         right: 0;
-        top: 0;
+        top: 6em;
         display: inline-flex;
         flex-direction: column;
         align-items: flex-start;
         width: 15em;
         font-size: 0.8em;
-        animation-duration: 2s;
-        animation-name: drop;
 
-       
+
+
+
+
 
         & #dropMenuComponent {
             background-color: rgba(177, 173, 160, 0.87);
@@ -164,6 +175,7 @@ body {
             &:hover {
                 background-color: rgba(144, 141, 131, 0.87);
                 cursor: pointer;
+
             }
         }
 
@@ -178,11 +190,17 @@ body {
 
         }
 
-        .cerrarContainer {
+        #dropMenuComponentClose {
+            background-color: rgba(177, 173, 160, 0.87);
             display: flex;
             justify-content: center;
             width: 100%;
             padding: 1em 0 0.5em 0;
+
+            &:hover {
+                background-color: rgba(144, 141, 131, 0.87);
+                cursor: pointer;
+            }
 
             & .cerrar {
                 height: 15px;
@@ -193,17 +211,6 @@ body {
     }
 
 
-    @keyframes drop{
-        from {
-            margin-top: 100%;
-            width: 0%
-          }
-        
-          to {
-            margin-top: 0%;
-            width: 100%;
-          }
-    }
 
 
     .presentacion {
@@ -213,7 +220,29 @@ body {
         align-items: center;
         font-size: 1.5em;
     }
+
 }
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(28, 27, 24); 
+  }
+
 
 .sobreMi {
     @include bloque;
@@ -288,24 +317,26 @@ body {
             width: 7.5em;
         }
     }
-    & .moviesApp{
+
+    & .moviesApp {
         width: 35em;
         height: 20em;
         background-image: url(/images/Proyectos/MoviesApp.PNG);
         background-size: cover;
         position: relative;
         box-shadow: 1px 1px 3px 3px #ccc;
-        
-        
-        &:hover{
-            .fondoGris{
+
+
+        &:hover {
+            .fondoGris {
                 visibility: visible;
             }
         }
-        .fondoGris{
-            color:$fontColorPresentacion;
+
+        .fondoGris {
+            color: $fontColorPresentacion;
             text-shadow: 1px 1px #ccc;
-            background: rgba(189, 188, 188, 0.7);
+            background: rgba(76, 76, 76, 0.7);
             z-index: 1;
             width: 35em;
             height: 20em;
@@ -314,41 +345,52 @@ body {
             justify-content: center;
             visibility: hidden;
 
-            
-            & a{
-                color:$fontColorPresentacion;
-                text-shadow: 1px 1px #ccc;
 
+            & a {
+                color: $fontColorPresentacion;
+                text-shadow: 1px 1px #ccc;
                 text-decoration: none;
                 font-size: 2em;
-                
-                
+
+                &:hover {
+                    padding: 0.2em;
+                    border-radius: 4px;
+                    background-color: rgba(23, 22, 25, 0.428);
+                    transition: 1s;
+
+
+                }
+
+
             }
 
-        
 
-        & .tecs{
-            display: flex;
-            justify-content: space-between;
-            width: 5em;
-            position: absolute;
-            bottom: 1em;
-            right: 1em;
 
-            #tec{
+            & .tecs {
                 display: flex;
-                flex-direction: column;
-                align-items: center;
+                justify-content: space-between;
+                width: 5em;
+                position: absolute;
+                bottom: 1em;
+                right: 1em;
+                padding: 0.2em;
+                border-radius: 4px;
+                background-color: rgba(64, 62, 62, 0.292);
+
+                #tec {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                #imgTec {
+                    width: 1em;
+                    height: 1em;
+                }
+
+
             }
-
-            #imgTec{
-                width: 1em;
-                height: 1em;
-            }
-
-
         }
-    }
     }
 }
 
@@ -386,27 +428,29 @@ footer {
 }
 
 
-@media(max-width : 880px) {
+@media(max-width : 600px) {
 
-    .dropdownMenu{
-        background-color: rgba(247, 247, 238, 0.9);
+    .dropdownMenu {
+        background-color: rgb(247, 247, 238) !important;
     }
 }
 
 @media(max-width : 600px) {
 
-    section h1{
+    section h1 {
         font-size: 2em !important;
     }
 
     .textoPresentacion {
         font-size: 0.75em;
     }
-    .moviesApp{
+
+    .moviesApp {
         height: 15em !important;
         width: 25em !important;
     }
-    .fondoGris{
+
+    .fondoGris {
         height: 15em !important;
         width: 25em !important;
     }

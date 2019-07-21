@@ -14,29 +14,58 @@
     <div>
         <header>
             <div class="dropdownContainer">
-                <div class="dropdown">
+                <div class="dropdown" >
                     <div class="bar"></div><br>
                     <div class="bar"></div><br>
                     <div class="bar"></div><br>
                 </div>
+                <!-- <script>
+                    let showDropMenu = () => {
+                        document.querySelector('.dropdown').visibility = 'hidden';
+                        let array = document.getElementsByTagName('a');
+                        for (let i = 0; i < array.length; i++) {
+                            const element = array[i];
+                                setTimeout( ()=> {
+                                element.style.visibility = 'visible';
+                            }, 25*i);
+                        }
+                    }
+
+                </script> -->
             </div>
             <div class="dropdownMenu">
-                <a id="dropMenuComponent"  class="enlace" href="#presentacion">Presentación</a>
-                <a id="dropMenuComponent"  class="enlace" href="#sobreMi">Sobre Mí</a>
-                <a id="dropMenuComponent"  class="enlace" href="#tecnologias">Tecnologías</a>
-                <a id="dropMenuComponent"  class="enlace" href="#misProyectos">Mis Proyectos</a>
-                <a id="dropMenuComponent"  class="enlace" href="#contacto">Contacto</a>
-                <a id="dropMenuComponent" target="blank" href="https://drive.google.com/file/d/1GqGTdgD1yrsjxEe3S7nbqTq1l3YzBqUE/view?usp=sharing">CV</a>
-                <div id="dropMenuComponent"  class="cerrarContainer">
-                    <img  class ="cerrar" src="/images/closeDM.png" alt="Cerar">
-                
+                <a id="dropMenuComponent" href="#presentacion">Presentación</a>
+                <a id="dropMenuComponent" href="#sobreMi">Sobre Mí</a>
+                <a id="dropMenuComponent" href="#tecnologias">Tecnologías</a>
+                <a id="dropMenuComponent" href="#misProyectos">Mis Proyectos</a>
+                <a id="dropMenuComponent" href="#contacto">Contacto</a>
+                <a id="dropMenuComponent" target="blank"
+                    href="https://drive.google.com/file/d/1GqGTdgD1yrsjxEe3S7nbqTq1l3YzBqUE/view?usp=sharing">CV</a>
+                    <a id="dropMenuComponentClose" >
+                        <img class="cerrar" src="/images/closeDM.png" alt="Cerrar">
+                    </a>
             </div>
+            <!-- <script>
+                    let hiddeDropMenu = () => {
+                        let array = document.getElementsByTagName('a');
+                        for (let i =  array.length; i >= 0; i--) {
+                            const element = array[i];
+                            console.log(element)
+                            setTimeout( ()=> {
+                                element.style.visibility = 'hidden';
+                            }, 25*i);
+                        }
+                        document.querySelector('.dropdown').visibility = 'visible';
+                    }
+
+                </script> -->
+
         </header>
 
 
 
 
-        <section data-section = "0" id="presentacion" class="presentacion">
+        <section data-section="0" id="presentacion" class="presentacion">
             <div class="textoPresentacion">
                 <h1>Hola,</h1>
                 <h1>soy Pablo Lacasta Sanchis,</h1>
@@ -47,200 +76,202 @@
 
     <div class="dropdownBlack">
 
-    <section data-section = "1" id="sobreMi" class="sobreMi">
+        <section data-section="1" id="sobreMi" class="sobreMi">
 
-        <h1>SOBRE MÍ</h1>
-        <div class="cuadroTexto">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti eius, mollitia qui ipsa sint voluptas
-                perferendis aliquam, dolores consequatur ullam autem quisquam iure ab. Pariatur aliquid perferendis
-                earum alias maxime?
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid omnis quis, tenetur vel sapiente
-                placeat corporis ad laudantium beatae exercitationem cum eaque quibusdam maiores nostrum saepe, eius
-                corrupti libero unde.
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi deleniti nesciunt illo mollitia
-                veritatis facere aut debitis sapiente, voluptatibus consequuntur at libero quia quam amet labore quas,
-                earum dolorum officia!</p>
-        </div>
+            <h1>SOBRE MÍ</h1>
+            <div class="cuadroTexto">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti eius, mollitia qui ipsa sint
+                    voluptas
+                    perferendis aliquam, dolores consequatur ullam autem quisquam iure ab. Pariatur aliquid perferendis
+                    earum alias maxime?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid omnis quis, tenetur vel sapiente
+                    placeat corporis ad laudantium beatae exercitationem cum eaque quibusdam maiores nostrum saepe, eius
+                    corrupti libero unde.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi deleniti nesciunt illo mollitia
+                    veritatis facere aut debitis sapiente, voluptatibus consequuntur at libero quia quam amet labore
+                    quas,
+                    earum dolorum officia!</p>
+            </div>
 
-    </section>
-    <section data-section = "2" id="tecnologias" class="tecnologias">
-        <h1>TECNOLOGÍAS</h1>
-        <div class="bloquesTecnologias">
-            <h3>FRONTEND</h3>
-            <div class="frontend">
-                <div class="imagenTecnologia">
-                    <img src="./images/frontend/angular.png" alt="angular">
-                    <span>Angular</span>
+        </section>
+        <section data-section="2" id="tecnologias" class="tecnologias">
+            <h1>TECNOLOGÍAS</h1>
+            <div class="bloquesTecnologias">
+                <h3>FRONTEND</h3>
+                <div class="frontend">
+                    <div class="imagenTecnologia">
+                        <img src="./images/frontend/angular.png" alt="angular">
+                        <span>Angular</span>
+                    </div>
+                    <div class="imagenTecnologia">
+                        <img src="/images/frontend/react.png" alt="react">
+                        <span>React</span>
+
+                    </div>
+                    <div class="imagenTecnologia">
+                        <img src="/images/frontend/css.png" alt="css">
+                        <span>CSS</span>
+
+                    </div>
+                    <div class="imagenTecnologia">
+                        <img src="/images/frontend/sass.png" alt="sass">
+                        <span>SASS</span>
+
+                    </div>
+                    <div class="imagenTecnologia">
+                        <img src="/images/frontend/bootstrap.png" alt="bootstrap">
+                        <span>Bootstrap</span>
+
+                    </div>
+                    <div class="imagenTecnologia">
+                        <img src="/images/frontend/materialDesign.png" alt="materialDesign">
+                        <span>Material</span>
+                        <span>Design</span>
+
+                    </div>
+                    <div class="imagenTecnologia">
+                        <img src="/images/frontend/html.png" alt="html">
+                        <span>HTML</span>
+
+                    </div>
+                    <div class="imagenTecnologia">
+                        <img src="/images/frontend/jquery.png" alt="jquery">
+                        <span>JQuery</span>
+
+                    </div>
+                    <div class="imagenTecnologia">
+                        <img src="/images/frontend/js.png" alt="js">
+                        <span>JavaScript</span>
+
+                    </div>
                 </div>
-                <div class="imagenTecnologia">
-                    <img src="/images/frontend/react.png" alt="react">
-                    <span>React</span>
+                <h3>BACKEND</h3>
+                <div class="backend">
 
-                </div>
-                <div class="imagenTecnologia">
-                    <img src="/images/frontend/css.png" alt="css">
-                    <span>CSS</span>
+                    <div class="imagenTecnologia">
+                        <img src="/images/backend/express.png" alt="express">
+                        <span>Express</span>
 
-                </div>
-                <div class="imagenTecnologia">
-                    <img src="/images/frontend/sass.png" alt="sass">
-                    <span>SASS</span>
+                    </div>
+                    <div class="imagenTecnologia">
+                        <img src="/images/backend/node.png" alt="node">
+                        <span>Node.js</span>
 
-                </div>
-                <div class="imagenTecnologia">
-                    <img src="/images/frontend/bootstrap.png" alt="bootstrap">
-                    <span>Bootstrap</span>
+                    </div>
+                    <div class="imagenTecnologia">
+                        <img src="/images/backend/js.png" alt="js">
+                        <span>JavaScript</span>
 
-                </div>
-                <div class="imagenTecnologia">
-                    <img src="/images/frontend/materialDesign.png" alt="materialDesign">
-                    <span>Material</span>
-                    <span>Design</span>
+                    </div>
+                    <div class="imagenTecnologia">
+                        <img src="/images/backend/php.png" alt="php">
+                        <span>PHP</span>
 
-                </div>
-                <div class="imagenTecnologia">
-                    <img src="/images/frontend/html.png" alt="html">
-                    <span>HTML</span>
+                    </div>
+                    <div class="imagenTecnologia">
+                        <img src="/images/backend/laravel.png" alt="laravel">
+                        <span>Laravel</span>
 
-                </div>
-                <div class="imagenTecnologia">
-                    <img src="/images/frontend/jquery.png" alt="jquery">
-                    <span>JQuery</span>
+                    </div>
+                    <div class="imagenTecnologia">
+                        <img src="/images/backend/mongodb.png" alt="mongodb">
+                        <span>MongoDB</span>
 
+                    </div>
+                    <div class="imagenTecnologia">
+                        <img src="/images/backend/robo3t.png" alt="robo3t">
+                        <span>Robo3T</span>
+
+                    </div>
+                    <div class="imagenTecnologia">
+                        <img src="/images/backend/mysql.png" alt="mysql">
+                        <span>MySQL</span>
+
+                    </div>
+                    <div class="imagenTecnologia">
+                        <img src="/images/backend/postman.png" alt="postman">
+                        <span>PostMan</span>
+
+                    </div>
                 </div>
-                <div class="imagenTecnologia">
-                    <img src="/images/frontend/js.png" alt="js">
-                    <span>JavaScript</span>
+                <h3>OTROS</h3>
+                <div class="otros">
+                    <div class="imagenTecnologia">
+                        <img src="/images/otros/descargaheroku.png" alt="heroku">
+                        <span>Heroku</span>
+
+                    </div>
+                    <div class="imagenTecnologia">
+                        <img src="/images/otros/git.png" alt="git">
+                        <span>Git</span>
+
+                    </div>
+                    <div class="imagenTecnologia">
+                        <img src="/images/otros/github.png" alt="github">
+                        <span>GitHub</span>
+
+                    </div>
+                    <div class="imagenTecnologia">
+                        <img src="/images/otros/npm.png" alt="npm">
+                        <span>npm</span>
+
+                    </div>
+                    <div class="imagenTecnologia">
+                        <img src="/images/otros/typescript.png" alt="typescript">
+                        <span>TypeSript</span>
+
+                    </div>
+
+                    <div class="imagenTecnologia">
+                        <img src="/images/otros/docker.png" alt="Docker">
+                        <span>Docker</span>
+
+                    </div>
+                    <div class="imagenTecnologia">
+                        <img src="/images/otros/wordpress.png" alt="wordpress">
+                        <span>WordPress</span>
+
+                    </div>
+                    <div class="imagenTecnologia">
+                        <img src="/images/otros/trello.png" alt="Trello">
+                        <span>Trello</span>
+
+                    </div>
 
                 </div>
             </div>
-            <h3>BACKEND</h3>
-            <div class="backend">
+        </section>
 
-                <div class="imagenTecnologia">
-                    <img src="/images/backend/express.png" alt="express">
-                    <span>Express</span>
+        <section data-section="3" id="misProyectos" class="misProyectos">
+            <h1>MIS PROYECTOS</h1>
+            <div class="moviesApp">
 
-                </div>
-                <div class="imagenTecnologia">
-                    <img src="/images/backend/node.png" alt="node">
-                    <span>Node.js</span>
-
-                </div>
-                <div class="imagenTecnologia">
-                    <img src="/images/backend/js.png" alt="js">
-                    <span>JavaScript</span>
-
-                </div>
-                <div class="imagenTecnologia">
-                    <img src="/images/backend/php.png" alt="php">
-                    <span>PHP</span>
-
-                </div>
-                <div class="imagenTecnologia">
-                    <img src="/images/backend/laravel.png" alt="laravel">
-                    <span>Laravel</span>
-
-                </div>
-                <div class="imagenTecnologia">
-                    <img src="/images/backend/mongodb.png" alt="mongodb">
-                    <span>MongoDB</span>
-
-                </div>
-                <div class="imagenTecnologia">
-                    <img src="/images/backend/robo3t.png" alt="robo3t">
-                    <span>Robo3T</span>
-
-                </div>
-                <div class="imagenTecnologia">
-                    <img src="/images/backend/mysql.png" alt="mysql">
-                    <span>MySQL</span>
-
-                </div>
-                <div class="imagenTecnologia">
-                    <img src="/images/backend/postman.png" alt="postman">
-                    <span>PostMan</span>
-
-                </div>
-            </div>
-            <h3>OTROS</h3>
-            <div class="otros">
-                <div class="imagenTecnologia">
-                    <img src="/images/otros/descargaheroku.png" alt="heroku">
-                    <span>Heroku</span>
-
-                </div>
-                <div class="imagenTecnologia">
-                    <img src="/images/otros/git.png" alt="git">
-                    <span>Git</span>
-
-                </div>
-                <div class="imagenTecnologia">
-                    <img src="/images/otros/github.png" alt="github">
-                    <span>GitHub</span>
-
-                </div>
-                <div class="imagenTecnologia">
-                    <img src="/images/otros/npm.png" alt="npm">
-                    <span>npm</span>
-
-                </div>
-                <div class="imagenTecnologia">
-                    <img src="/images/otros/typescript.png" alt="typescript">
-                    <span>TypeSript</span>
-
-                </div>
-
-                <div class="imagenTecnologia">
-                    <img src="/images/otros/docker.png" alt="Docker">
-                    <span>Docker</span>
-
-                </div>
-                <div class="imagenTecnologia">
-                    <img src="/images/otros/wordpress.png" alt="wordpress">
-                    <span>WordPress</span>
-
-                </div>
-                <div class="imagenTecnologia">
-                    <img src="/images/otros/trello.png" alt="Trello">
-                    <span>Trello</span>
-
+                <div class="fondoGris">
+                    <a href="https://moviesapp-mean.herokuapp.com" target="blank"> MoviesApp </a>
+                    <div class="tecs">
+                        <div id="tec" class="mongo">
+                            <img id="imgTec" src="/images/backend/mongodb.png" alt="Mongo" class="imgMongo">
+                            <span>M</span>
+                        </div>
+                        <div id="tec" class="express">
+                            <img id="imgTec" src="/images/backend/express.png" alt="Express" class="imgExpress">
+                            <span>E</span>
+                        </div>
+                        <div id="tec" class="angular">
+                            <img id="imgTec" src="/images/frontend/angular.png" alt="Angular" class="imgAngular">
+                            <span>A</span>
+                        </div>
+                        <div id="tec" class="node">
+                            <img id="imgTec" src="/images/backend/node.png" alt="Node" class="imgNode">
+                            <span>N</span>
+                        </div>
+                    </div>
+                    <!-- <img src="/images/Proyectos/MoviesApp.PNG" alt="moviesApp" class="imgMoviesApp"> -->
                 </div>
 
             </div>
-        </div>
-    </section>
-
-    <section data-section = "3" id="misProyectos" class="misProyectos">
-        <h1>MIS PROYECTOS</h1>
-        <div class="moviesApp">
-         
-            <div class="fondoGris" >
-                <a href="https://moviesapp-mean.herokuapp.com" target="blank"> MoviesApp </a>
-                <div class="tecs">
-                    <div id ="tec" class="mongo">
-                        <img id = "imgTec" src="/images/backend/mongodb.png" alt="Mongo" class="imgMongo">
-                        <span>M</span>
-                    </div>
-                    <div id ="tec" class="express">
-                        <img id = "imgTec"  src="/images/backend/express.png" alt="Express" class="imgExpress">
-                        <span>E</span>
-                    </div>
-                    <div id ="tec" class="angular">
-                        <img id = "imgTec" src="/images/frontend/angular.png" alt="Angular" class="imgAngular">
-                        <span>A</span>
-                    </div>
-                    <div id ="tec" class="node">
-                        <img id = "imgTec" src="/images/backend/node.png" alt="Node" class="imgNode">
-                        <span>N</span>
-                    </div>
-                </div>
-                <!-- <img src="/images/Proyectos/MoviesApp.PNG" alt="moviesApp" class="imgMoviesApp"> -->
-            </div>
-        
+        </section>
     </div>
-    </section>
-</div>
     <footer id="contacto">
         <h2>¡No dudes en contactar conmigo!</h2>
 
