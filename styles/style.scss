@@ -148,6 +148,8 @@ body {
         align-items: flex-start;
         width: 15em;
         font-size: 0.8em;
+        animation-duration: 2s;
+        animation-name: drop;
 
         & #dropMenuComponent {
             background-color: rgba(177, 173, 160, 0.87);
@@ -183,8 +185,18 @@ body {
             }
         }
 
+    }
 
-
+    @keyframes drop{
+        from {
+            margin-left: 100%;
+            width: 300%
+          }
+        
+          to {
+            margin-left: 0%;
+            width: 100%;
+          }
     }
 
 
@@ -286,16 +298,17 @@ footer {
     & .contacto {
         display: flex;
         justify-content: space-around;
+        align-items: center;
 
 
-        & img:not(.email) {
+        & img {
             width: 80px;
             height: 80px;
         }
 
-        & .email {
-            width: 73px;
-            height: 73px;
+        & span {
+            font-family: $font;
+            font-size: 1.2em;
         }
     }
 
