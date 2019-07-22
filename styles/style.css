@@ -8,7 +8,7 @@ body {
 }
 body > div {
   background-color: #1c1b18;
-  color: #F2F1F0;
+  color: #f2f1f0;
 }
 body header {
   position: relative;
@@ -36,11 +36,11 @@ body header .dropdownContainer .dropdown {
 body header .dropdownContainer .dropdown .bar {
   width: 3em;
   height: 2px;
-  background-color: #F2F1F0;
+  background-color: #f2f1f0;
   border-radius: 2px;
 }
 body header .dropdownContainer .dropdown .black {
-  background-color: #1C1B18;
+  background-color: #1c1b18;
 }
 body header .dropdownContainer .dropdown:hover {
   cursor: pointer;
@@ -59,10 +59,11 @@ body .dropdownMenu {
   font-size: 0.8em;
 }
 body .dropdownMenu #dropMenuComponent {
-  background-color: rgba(177, 173, 160, 0.87);
-  border-bottom: 1px solid #1C1B18;
+  background-color: rgba(184, 182, 181, 0.5);
+  border-bottom: 1px solid #1c1b18;
   width: 100%;
   display: none;
+  color: #1c1b18;
 }
 body .dropdownMenu #dropMenuComponent:hover {
   background-color: rgba(144, 141, 131, 0.87);
@@ -75,7 +76,7 @@ body .dropdownMenu a {
   font-family: "Titillium Web", sans-serif;
   text-decoration: none;
   font-size: 1.2em;
-  color: #1C1B18;
+  color: #1c1b18;
 }
 body .dropdownMenu .dropMenuComponent7 .cerrar {
   height: 15px;
@@ -113,7 +114,7 @@ body .presentacion {
 .sobreMi {
   min-height: 100vh;
   padding: 2em 10vw;
-  color: #1C1B18;
+  color: #1c1b18;
   background-color: #F2F1F0;
   font-family: "Titillium Web", sans-serif;
 }
@@ -126,7 +127,7 @@ body .presentacion {
   justify-content: center;
   position: relative;
   font-size: 3em;
-  color: #1C1B18;
+  color: #1c1b18;
   padding-bottom: 0.2em;
 }
 .sobreMi > h1::after {
@@ -140,21 +141,31 @@ body .presentacion {
 .sobreMi > h1::after {
   width: 5.3em;
 }
-.sobreMi .cuadroTexto {
-  margin: 5em 0em;
+.sobreMi .textoEimagen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sobreMi .textoEimagen img {
+  margin-top: 2em;
+  height: 10em;
+  width: 15em;
+}
+.sobreMi .textoEimagen .cuadroTexto {
+  margin: 2em 0em;
   padding: 1em;
   box-shadow: 1px 1px 3px 3px #ccc;
   text-align: justify;
 }
-.sobreMi .cuadroTexto > p {
-  color: #1C1B18;
+.sobreMi .textoEimagen .cuadroTexto > p {
+  color: #1c1b18;
   font-size: 1.5em;
 }
 
 .tecnologias {
   min-height: 100vh;
   padding: 2em 10vw;
-  color: #1C1B18;
+  color: #1c1b18;
   background-color: #F2F1F0;
   font-family: "Titillium Web", sans-serif;
   border-top: solid black 1px;
@@ -168,7 +179,7 @@ body .presentacion {
   justify-content: center;
   position: relative;
   font-size: 3em;
-  color: #1C1B18;
+  color: #1c1b18;
   padding-bottom: 0.2em;
   margin-bottom: 1em;
 }
@@ -293,7 +304,7 @@ body .presentacion {
 .misProyectos {
   min-height: 100vh;
   padding: 2em 10vw;
-  color: #1C1B18;
+  color: #1c1b18;
   background-color: #F2F1F0;
   font-family: "Titillium Web", sans-serif;
   border-top: solid black 1px;
@@ -310,7 +321,7 @@ body .presentacion {
   justify-content: center;
   position: relative;
   font-size: 3em;
-  color: #1C1B18;
+  color: #1c1b18;
   padding-bottom: 0.2em;
   margin-bottom: 1em;
 }
@@ -337,7 +348,7 @@ body .presentacion {
   visibility: visible;
 }
 .misProyectos .moviesApp .fondoGris {
-  color: #F2F1F0;
+  color: #f2f1f0;
   text-shadow: 1px 1px #ccc;
   background: rgba(76, 76, 76, 0.7);
   z-index: 1;
@@ -349,7 +360,7 @@ body .presentacion {
   visibility: hidden;
 }
 .misProyectos .moviesApp .fondoGris a {
-  color: #F2F1F0;
+  color: #f2f1f0;
   text-shadow: 1px 1px #ccc;
   text-decoration: none;
   font-size: 2em;
@@ -383,7 +394,7 @@ body .presentacion {
 
 footer {
   background-color: #1c1b18;
-  color: #F2F1F0;
+  color: #f2f1f0;
   display: flex;
   flex-direction: column;
   justify-content: center;
