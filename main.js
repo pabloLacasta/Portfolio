@@ -51,7 +51,7 @@ $(".dropdown").click(function(){
   $(".dropMenuComponent7").fadeIn(700);
 });
 
-$("#dropMenuComponent").click(function(){
+$("a").click(function(){
   $(".dropMenuComponent7").fadeOut(100);
   $(".dropMenuComponent6").fadeOut(200);
   $(".dropMenuComponent5").fadeOut(300);
