@@ -140,11 +140,7 @@ body {
                     background-color: rgba(204, 204, 204, 0.5);
                     border-radius: 3px;
                     transition: 0.4s;
-                    -webkit-transition: height 0.3s ease-in;
-                    -moz-transition: height 0.3s ease-in;
-                    -o-transition: height 0.3s ease-in;
-                    -ms-transition: height 0.3s ease-in;
-                    transition: height 0.3s ease-in;
+
                 }
             }
 
@@ -152,7 +148,6 @@ body {
     }
 
     .dropdownMenu {
-        visibility: hidden;
         position: absolute;
         right: 0;
         top: 6em;
@@ -163,21 +158,21 @@ body {
         font-size: 0.8em;
 
 
-
-
-
-
         & #dropMenuComponent {
             background-color: rgba(177, 173, 160, 0.87);
             border-bottom: 1px solid $fontColor;
             width: 100%;
+            // transition:0.2s;
+            display: none;
 
             &:hover {
                 background-color: rgba(144, 141, 131, 0.87);
                 cursor: pointer;
-                transition: 0.5s;
+                transition: 1s;
 
             }
+
+
         }
 
         & a {
@@ -197,10 +192,14 @@ body {
             justify-content: center;
             width: 100%;
             padding: 1em 0 0.5em 0;
+            display: none;
+
+
 
             &:hover {
                 background-color: rgba(144, 141, 131, 0.87);
                 cursor: pointer;
+                transition: 1s;
             }
 
             & .cerrar {
@@ -226,23 +225,23 @@ body {
 
 ::-webkit-scrollbar {
     width: 5px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #888; 
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
     border-radius: 5px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: rgb(28, 27, 24); 
-  }
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(28, 27, 24);
+}
 
 
 .sobreMi {
@@ -357,7 +356,7 @@ body {
                     padding: 0.2em;
                     border-radius: 4px;
                     background-color: rgba(23, 22, 25, 0.428);
-                    transition: 1s;
+                    transition: 0.5s;
 
 
                 }

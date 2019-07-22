@@ -13,52 +13,28 @@
 <body>
     <div>
         <header>
-            <div class="dropdownContainer">
+            <div class="dropdownContainer" >
                 <div class="dropdown" >
                     <div class="bar"></div><br>
                     <div class="bar"></div><br>
                     <div class="bar"></div><br>
                 </div>
-                <!-- <script>
-                    let showDropMenu = () => {
-                        document.querySelector('.dropdown').visibility = 'hidden';
-                        let array = document.getElementsByTagName('a');
-                        for (let i = 0; i < array.length; i++) {
-                            const element = array[i];
-                                setTimeout( ()=> {
-                                element.style.visibility = 'visible';
-                            }, 25*i);
-                        }
-                    }
-
-                </script> -->
+               
+               
             </div>
             <div class="dropdownMenu">
-                <a id="dropMenuComponent" href="#presentacion">Presentación</a>
-                <a id="dropMenuComponent" href="#sobreMi">Sobre Mí</a>
-                <a id="dropMenuComponent" href="#tecnologias">Tecnologías</a>
-                <a id="dropMenuComponent" href="#misProyectos">Mis Proyectos</a>
-                <a id="dropMenuComponent" href="#contacto">Contacto</a>
-                <a id="dropMenuComponent" target="blank"
-                    href="https://drive.google.com/file/d/1GqGTdgD1yrsjxEe3S7nbqTq1l3YzBqUE/view?usp=sharing">CV</a>
-                    <a id="dropMenuComponentClose" >
+                <a id="dropMenuComponent" class="dropMenuComponent1" href="#presentacion">Presentación</a>
+                <a id="dropMenuComponent" class="dropMenuComponent2"  href="#sobreMi">Sobre Mí</a>
+                <a id="dropMenuComponent" class="dropMenuComponent3"  href="#tecnologias">Tecnologías</a>
+                <a id="dropMenuComponent" class="dropMenuComponent4"  href="#misProyectos">Mis Proyectos</a>
+                <a id="dropMenuComponent" class="dropMenuComponent5"  href="#contacto">Contacto</a>
+                <a id="dropMenuComponent" class="dropMenuComponent6"  target="blank"
+                    href="https://drive.google.com/file/d/1KIBSWN5A28cNUbYdsIkiIHIY3s7iZ2HW/view?usp=sharing">CV</a>
+                    <a id="dropMenuComponentClose" class="dropMenuComponent7"  >
                         <img class="cerrar" src="/images/closeDM.png" alt="Cerrar">
                     </a>
             </div>
-            <!-- <script>
-                    let hiddeDropMenu = () => {
-                        let array = document.getElementsByTagName('a');
-                        for (let i =  array.length; i >= 0; i--) {
-                            const element = array[i];
-                            console.log(element)
-                            setTimeout( ()=> {
-                                element.style.visibility = 'hidden';
-                            }, 25*i);
-                        }
-                        document.querySelector('.dropdown').visibility = 'visible';
-                    }
-
-                </script> -->
+            
 
         </header>
 
@@ -169,8 +145,8 @@
 
                     </div>
                     <div class="imagenTecnologia">
-                        <img src="/images/backend/laravel.png" alt="laravel">
-                        <span>Laravel</span>
+                        <img src="/images/backend/symfony.png" alt="symfony">
+                        <span>Symfony</span>
 
                     </div>
                     <div class="imagenTecnologia">
@@ -293,6 +269,8 @@
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 <script src="main.js"></script>
 
 </html>
