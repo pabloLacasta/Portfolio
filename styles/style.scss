@@ -165,7 +165,6 @@ body {
             background-color: rgba(177, 173, 160, 0.87);
             border-bottom: 1px solid $fontColor;
             width: 100%;
-            // transition:0.2s;
             display: none;
 
             &:hover {
@@ -189,21 +188,10 @@ body {
 
         }
 
-        #dropMenuComponentClose {
-            background-color: rgba(177, 173, 160, 0.87);
-            display: flex;
-            justify-content: center;
+        .dropMenuComponent7 {
             width: 100%;
-            padding: 1em 0 0.5em 0;
-            display: none;
-
-
-
-            &:hover {
-                background-color: rgba(144, 141, 131, 0.87);
-                cursor: pointer;
-                transition: 1s;
-            }
+            padding: 1em 0 0.5em 5.5em;
+            
 
             & .cerrar {
                 height: 15px;
