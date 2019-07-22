@@ -50,7 +50,7 @@ body header .dropdownContainer .dropdown:hover {
 }
 body .dropdownMenu {
   position: absolute;
-  right: 0;
+  right: 5em;
   top: 6em;
   display: inline-flex;
   flex-direction: column;
@@ -78,8 +78,8 @@ body .dropdownMenu a {
   color: #1C1B18;
 }
 body .dropdownMenu .dropMenuComponent7 {
-  width: 100%;
-  padding: 1em 0 0.5em 5.5em;
+  width: 100% !important;
+  padding: 1em 0 0.5em 0em;
 }
 body .dropdownMenu .dropMenuComponent7 .cerrar {
   height: 15px;
@@ -410,9 +410,9 @@ footer .contacto span {
   font-size: 1.2em;
 }
 
-@media (max-width: 800px) and (min-width: 600px) {
-  .dropdownMenu {
-    background-color: #f7f7ee !important;
+@media (max-width: 800px) {
+  .fondoGris {
+    visibility: visible !important;
   }
 }
 @media (max-width: 600px) {
