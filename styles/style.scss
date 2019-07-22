@@ -109,6 +109,9 @@ body {
         z-index: 1;
 
         & .dropdownContainer {
+            position: absolute;
+            top:1em;
+            right: 1em;
             height: 4.5em;
             width: 100%;
             display: flex;
