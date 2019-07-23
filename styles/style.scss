@@ -34,7 +34,7 @@ sans-serif;
 
 @mixin bloque {
     min-height: 100vh;
-    padding: 2em 10vw;
+    padding: 2em 10vw 2em 5vw;
     color: $fontColor;
     background-color: $backgroundColor;
     font-family: $font;
@@ -162,7 +162,7 @@ body {
 
 
         & #dropMenuComponent {
-            background-color: rgba(184, 182, 181, 0.5);
+            background-color: rgba(184, 182, 181, 0.75);
             border-bottom: 1px solid $fontColor;
             width: 100%;
             display: none;
@@ -201,9 +201,6 @@ body {
         }
 
     }
-
-
-
 
     .presentacion {
         display: flex;
@@ -439,6 +436,15 @@ footer {
     .fondoGris {
         visibility: visible !important;
     }
+
+    
+        
+        #dropMenuComponent{
+          
+
+            background-color: $backgroundColor !important;
+        }
+    
 }
 
 @media(max-width : 600px) {
@@ -465,6 +471,10 @@ footer {
 @media(max-width : 450px) {
     .textoPresentacion {
         font-size: 0.6em;
+    }
+    .sobreMi p{
+
+        font-size: 1em !important;
     }
 }
 

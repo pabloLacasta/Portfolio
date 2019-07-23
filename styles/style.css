@@ -59,7 +59,7 @@ body .dropdownMenu {
   font-size: 0.8em;
 }
 body .dropdownMenu #dropMenuComponent {
-  background-color: rgba(184, 182, 181, 0.5);
+  background-color: rgba(184, 182, 181, 0.75);
   border-bottom: 1px solid #1c1b18;
   width: 100%;
   display: none;
@@ -113,7 +113,7 @@ body .presentacion {
 
 .sobreMi {
   min-height: 100vh;
-  padding: 2em 10vw;
+  padding: 2em 10vw 2em 5vw;
   color: #1c1b18;
   background-color: #F2F1F0;
   font-family: "Titillium Web", sans-serif;
@@ -164,7 +164,7 @@ body .presentacion {
 
 .tecnologias {
   min-height: 100vh;
-  padding: 2em 10vw;
+  padding: 2em 10vw 2em 5vw;
   color: #1c1b18;
   background-color: #F2F1F0;
   font-family: "Titillium Web", sans-serif;
@@ -303,7 +303,7 @@ body .presentacion {
 
 .misProyectos {
   min-height: 100vh;
-  padding: 2em 10vw;
+  padding: 2em 10vw 2em 5vw;
   color: #1c1b18;
   background-color: #F2F1F0;
   font-family: "Titillium Web", sans-serif;
@@ -422,6 +422,10 @@ footer .contacto span {
   .fondoGris {
     visibility: visible !important;
   }
+
+  #dropMenuComponent {
+    background-color: #F2F1F0 !important;
+  }
 }
 @media (max-width: 600px) {
   section h1 {
@@ -445,6 +449,10 @@ footer .contacto span {
 @media (max-width: 450px) {
   .textoPresentacion {
     font-size: 0.6em;
+  }
+
+  .sobreMi p {
+    font-size: 1em !important;
   }
 }
 @media (max-width: 400px) {
